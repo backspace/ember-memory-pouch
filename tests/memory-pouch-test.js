@@ -10,3 +10,14 @@ test('can create a database', function() {
     start();
   });
 });
+
+test('can create an in-memory database', function() {
+  stop();
+  (new PouchDB('memory-test', {adapter: 'memory'})).then(function(db) {
+    ok(db);
+    start();
+  }, function(error) {
+    ok(false, "Could not create in-memory database: " + error.stack);
+    start();
+  });
+});

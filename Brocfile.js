@@ -19,5 +19,6 @@ var app = new EmberApp();
 
 app.import('bower_components/es5-shim/es5-shim.js');
 app.import('bower_components/pouchdb/dist/pouchdb.js');
+app.import('bower_components/pouchdb/dist/pouchdb.memory.js');
 
 module.exports = app.toTree();
