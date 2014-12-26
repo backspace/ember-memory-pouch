@@ -18,6 +18,5 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 
 app.import('bower_components/es5-shim/es5-shim.js');
-app.import('bower_components/pouchdb/dist/pouchdb.js');
 
 module.exports = app.toTree();
