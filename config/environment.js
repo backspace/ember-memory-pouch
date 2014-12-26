@@ -12,6 +12,9 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' http://chromatin.ca"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
