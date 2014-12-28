@@ -16,6 +16,7 @@ export default Ember.Component.extend({
       component.set('memoryStatus', 'success');
     }, function(error) {
       component.set('memoryStatus', 'failure: ' + error.stack);
+      console.log(error, error.stack);
     });
   })
 });
